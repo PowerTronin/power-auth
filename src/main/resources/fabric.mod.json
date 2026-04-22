@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "power-auth",
+  "version": "${version}",
+  "name": "Power Auth",
+  "description": "Authentication for Fabric 1.20.1 servers with optional Telegram 2FA. Client-loadable for local testing.",
+  "authors": [
+    "Power Auth contributors"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.powerauth.PowerAuthMod"
+    ]
+  },
+  "mixins": [
+    "power-auth.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "minecraft": "1.20.1",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
+}
